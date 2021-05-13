@@ -1,0 +1,349 @@
+/*  FONTS font-family: 'Ubuntu', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.area1{
+    min-height: 100vh;
+    position: relative;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.cabecalho img{
+    max-width: 30px;
+    height: auto;
+}
+
+.cabecalho h1{
+   margin: 0 auto;
+   font-size: 35px;
+   font-family: 'Ubuntu', sans-serif;
+   text-transform: uppercase;
+}
+.onda-svg{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+}
+.onda-svg img{
+   max-width: 100%;
+}
+
+
+.area2{
+    margin-top: 30px;
+    z-index: 1000;
+    position: relative;
+}
+
+.login{
+    width: 100%;  
+}
+
+.login h4{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-login{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.form-login input{
+    height: 30px;
+}
+
+.form-login label{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.form-login .btn-login{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgb(73, 73, 73);
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+.form-login .criar-conta{
+    text-align: center;
+} 
+
+.form-login .btn-cadastrar{
+    width: 100%;
+    border-radius: 20px;
+    background-color: #25B05D;
+    border:none;
+    box-shadow: 3px 3px 5px rgb(73, 73, 73);
+    margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+
+
+.img-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-login img{
+    z-index: 100000;
+    max-width: 100%;
+    width: 550px;
+}
+
+
+/*      home       */
+
+.home{
+    height: 100vh;
+    background-color: rgb(160, 158, 158);
+    overflow-x: hidden;
+}
+
+.area-home{
+    padding-top: 10px;
+    box-shadow: 5px 5px 10px rgb(87, 86, 86);
+}
+
+.painel1{
+    padding-top: 20px;  
+    background-color: black;
+    color: white;
+}
+
+.painel1 header{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.painel1 header i{
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.painel1 header h5{
+    padding-left: 20px;
+    display: flex;
+    font-size: 18px;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.icon-home{
+    margin-bottom: 20px;
+}
+
+.icon-home ul{
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.icon-home ul li{
+    list-style: none;
+}
+
+.icon-home ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon-home ul li a i{
+   color: white;
+   padding-right: 10px;
+}
+
+/* calendario */
+
+.calendario-home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height:auto;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+/* Modal */
+
+.modal-tarefas{
+    text-align: center;
+}
+
+.modal-tarefas i{
+    font-size: 60px;
+    color: white;
+}
+
+.modal-tarefas a{
+    cursor: pointer;
+}
+
+
+/*painel 2*/
+
+.painel2{
+    padding-top: 20px;  
+    background-color: rgb(255, 255, 255);
+}
+
+.painel2 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.painel2 header h1{
+    margin: 0 auto;
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+.painel2 header img{
+    max-width: 30px;
+}
+
+.apresentacao{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.quadro-home1 img{
+    max-width: 100%;
+}
+
+.quadro-home2{
+    margin: auto 0;
+}
+
+.quadro-home3{
+    margin: auto 0;
+}
+
+.quadro-home3 img{
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* ids*/
+
+#dia{
+    color: black;
+    font-weight: 800;
+}
+
+#mes-ano{
+    color: rgb(30, 194, 15);
+}
+
+#dia-semana{
+    color: black;
+    font-weight: 600;
+}
+
+#horas{
+    color: black;
+    font-weight: 600;
+}
+
+#img-hora{
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 10px;
+}
+
+/* Quadro de tarefas*/
+
+.quadro-tarefas{
+    margin-top: 40px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+.quadro-tarefas h3{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/* media querys*/
+
+
+
+
+@media screen and (max-width: 774px) {
+
+    .row {
+        display: block;
+    }
+    .form-login{
+        width: 80%;
+    }
+    .login{
+        width: 100%;
+    }
+    .col-sm-5{
+        max-width: 100%;
+        margin: 0;      
+    }
+    .col-sm-7{
+        max-width: 100%;
+        margin: 0;
+    }
+    .area1{
+        min-height: 155vh;
+        position: relative;
+    }
+       
+}
+
+@media screen and (max-width: 320px) {
+
+    .cabecalho h1{
+        font-size: 25px;
+    }
+    .area1{
+        min-height: 125vh;
+        position: relative;
+    }
+    .criar-conta{
+        font-size: 14px;
+    }
+}

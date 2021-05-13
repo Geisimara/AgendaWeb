@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="calendar/app.css">
+    <!--font awesome bootstrap 4.7-->
+    <script src="https://kit.fontawesome.com/3b3e4211b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+    <title>Agenda Web - Home</title>
+  </head>
+  <body>
+    
+    <section class="home">
+        <div class="container">
+            <div class="row area-home">
+                <div class="col-sm-3 painel1">  
+
+                    <header>
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i> 
+                        <h5 id="nome-usuario">Sakura Haruno</h5> 
+                    </header>   
+
+                    <div class="icon-home">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home </a> 
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Calendario </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#"> <i class="fa fa-list-alt" aria-hidden="true"></i>  Tarefas </a>
+                            </li>
+                        </ul>
+                    </div>
+                     
+                    <div class="calendario-home">
+                        <div class="calendar">
+                            <div class="calendar-header">
+                                <span class="month-picker" id="month-picker">February</span>
+                                <div class="year-picker">
+                                    <span class="year-change" id="prev-year">
+                                        <pre><</pre>
+                                    </span>
+                                    <span id="year">2021</span>
+                                    <span class="year-change" id="next-year">
+                                        <pre>></pre>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="calendar-body">
+                                <div class="calendar-week-day">
+                                    <div>D</div>
+                                    <div>S</div>
+                                    <div>T</div>
+                                    <div>Q</div>
+                                    <div>Q</div>
+                                    <div>S</div>
+                                    <div>S</div>
+                                </div>
+                                <div class="calendar-days"></div>
+                            </div>
+                            <div class="calendar-footer">
+                                <div class="toggle">
+                                    <span>Dark Mode</span>
+                                    <div class="dark-mode-switch">
+                                        <div class="dark-mode-switch-ident"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="month-list"></div>
+                        </div>
+                   </div>
+
+                   <div class="modal-tarefas">
+                     <a tabindex="0" data-toggle="popover" data-placement="top"  title="Adicionar Tarefas" ><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                   </div>
+                </div>
+                 <!--Quadro-->
+        
+                <div class="col-sm-9 painel2">
+                    <header>
+                        <img src="img/logo.png" alt="">
+                        <h1>Bem Vindo a sua Agenda</h1>
+                    </header>
+
+                    <div class="apresentacao">
+                        <div class="row">
+                            <div class="col-sm-4 quadro-home1">
+                                <img src="img/calendario.jpg" alt="">
+                            </div>
+    
+                            <div class="col-sm-4 quadro-home2">
+                                <h1 id="dia"> </h1>
+                                <p id="mes-ano"> </p>
+                                <p id="dia-semana"> </p>
+                            </div>
+    
+                            <div class="col-sm-4 quadro-home3">
+                                <img id="img-hora" src="" alt="">
+                                <p id="horas"> </p>
+                            </div>
+    
+                        </div>
+                    </div>    
+                    
+                    <div class="quadro-tarefas">
+                        <h3>Tarefas do dia</h3>
+                    </div>
+
+                    <div class="panel">
+                       
+                    </div>
+                </div>        
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script src="scripts.js"></script>
+    <script src="calendar/app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
